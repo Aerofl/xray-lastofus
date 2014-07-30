@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Last of Us - Worldwide Edition</title>
+</head>
+<body>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jssor.core.js"></script>
+    <script type="text/javascript" src="js/jssor.utils.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script type="text/javascript" src="js/looking_glass.js"></script>
+    <script type="text/javascript" src="js/transitionSlider.js"></script>
+    <!-- Jssor Slider Begin -->
+    <!-- You can move inline styles to css file or css block. -->
+    <p><img src="img/title.png"></p>
+    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 960px;
+        height: 480px; background: #191919; overflow: hidden;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 240px; top: 0px; width: 720px; height: 480px; overflow: hidden;">
+            <div>
+                <div id="my-container">
+                    <div id="lg-top-image"  data-src="http://i.imgur.com/m3LOW2k.jpg"></div>
+                    <div id="lg-bottom-image" data-src="http://i.imgur.com/384gRvE.jpg"></div>
+                </div>
+                <img u="thumb" src="http://i.imgur.com/m3LOW2k.jpg" />
+            </div>
+            <div>
+                <div id="my-container">
+                    <div id="lg-top-image"  data-src="http://i.imgur.com/AnD8BBw.jpg"></div>
+                    <div id="lg-bottom-image" data-src="http://i.imgur.com/xpj2pNo.jpg"></div>
+                </div>
+                <img u="thumb" src="http://i.imgur.com/AnD8BBw.jpg" />
+            </div>
+        </div>
+        
+        <!-- Arrow Navigator Skin Begin -->
+        <style>
+            /* jssor slider arrow navigator skin 05 css */
+            /*
+            .jssora05l              (normal)
+            .jssora05r              (normal)
+            .jssora05l:hover        (normal mouseover)
+            .jssora05r:hover        (normal mouseover)
+            .jssora05ldn            (mousedown)
+            .jssora05rdn            (mousedown)
+            */
+            .jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn
+            {
+                position: absolute;
+                cursor: pointer;
+                display: block;
+                background: url(img/a17.png) no-repeat;
+                overflow:hidden;
+            }
+            .jssora05l { background-position: -10px -40px; }
+            .jssora05r { background-position: -70px -40px; }
+            .jssora05l:hover { background-position: -130px -40px; }
+            .jssora05r:hover { background-position: -190px -40px; }
+            .jssora05ldn { background-position: -250px -40px; }
+            .jssora05rdn { background-position: -310px -40px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 158px; left: 248px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 158px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        
+        <!-- Thumbnail Navigator Skin 02 Begin -->
+        <div u="thumbnavigator" class="jssort02" style="position: absolute; width: 240px; height: 480px; left:0px; bottom: 0px;">
+        
+            <!-- Thumbnail Item Skin Begin -->
+            <style>
+                /* jssor slider thumbnail navigator skin 02 css */
+                /*
+                .jssort02 .p            (normal)
+                .jssort02 .p:hover      (normal mouseover)
+                .jssort02 .pav          (active)
+                .jssort02 .pav:hover    (active mouseover)
+                .jssort02 .pdn          (mousedown)
+                */
+                .jssort02 .w
+                {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                }
+                .jssort02 .c
+                {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 95px;
+                    height: 62px;
+                    border: #000 2px solid;
+                }
+                .jssort02 .p:hover .c, .jssort02 .pav:hover .c, .jssort02 .pav .c 
+                {
+                    background: url(img/t01.png) center center;
+                    border-width: 0px;
+                    top: 2px;
+                    left: 2px;
+                    width: 95px;
+                    height: 62px;
+                }
+                .jssort02 .p:hover .c, .jssort02 .pav:hover .c
+                {
+                    top: 0px;
+                    left: 0px;
+                    width: 97px;
+                    height: 64px;
+                    border: #fff 1px solid;
+                }
+            </style>
+            <div u="slides" style="cursor: move;">
+                <div u="prototype" class="p" style="position: absolute; width: 99px; height: 66px; top: 0; left: 0;">
+                    <div class=w><thumbnailtemplate style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
+                    <div class=c>
+                    </div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Thumbnail Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">javascript</a>
+    </div>
+    <!-- Jssor Slider End -->
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $("#my-container").lookingGlass();
+
+    });
+    </script>
+</body>
+</html>
